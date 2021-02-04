@@ -1,9 +1,9 @@
 -- *Slide* --
 ### Goals for today
-* Part 1: Learning about supercomputers and Spartan.
-* Part 2: Logging on an exploring the Linux Environment.
-* Part 3: Learning about Environment Modules and the Slurm job submission system.
-* Part 4: Submitting test jobs.
+* Part 1: Learning about supercomputers and Spartan
+* Part 2: Logging on an exploring the Linux Environment
+* Part 3: Environment Modules and Slurm job submission
+* Part 4: Job Examples
 * Part 5: Slurm Command Summaries and Peformance Test
 -- *Slide End* --
 
@@ -478,6 +478,13 @@ dataset10.csv
 * An interactive job, based on the resource requests made on the command  line, puts the user on to a compute node. This is typically done if they user wants to run a  large script (and shouldn't do it on the login node), or wants to test or debug a job. The  following command would launch one node with two processors for ten minutes.
 `sinteractive ­­--nodes=1 --­­ntasks-­per-­node=2 --­­time=0:10:0`
 * Example and instructions at `/usr/local/common/interact`
+-- *Slide End* --
+
+-- *Slide* --
+### Part 4: Web-Based Interactive
+* Spartan has two web-based interactive job submission systems, FastX and OpenOn Demand.
+* FastX provides a full GUI desktop system with excellent performance.
+* Open OnDemand provides access to interactive environments, such as RStudio and Jupyter notebooks.
 -- *Slide End* --
 
 -- *Slide* --
