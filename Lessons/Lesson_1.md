@@ -1,7 +1,7 @@
 -- *Slide* --
 ### Goals for today
 * Part 1: Learning about supercomputers and Spartan
-* Part 2: Logging on an exploring the Linux Environment
+* Part 2: Logging on and exploring the Linux Environment
 * Part 3: Environment Modules and Slurm job submission
 * Part 4: Job Examples
 * Part 5: Slurm Command Summaries and Peformance Test
@@ -9,22 +9,22 @@
 
 -- *Slide* --
 ### Slide Respository
-* A copy of these slides and sample code is available at: `https://github.com/UoM-ResPlat-DevOps/SpartanIntro`
+* A copy of these slides and sample code is available at: `https://github.com/levlafayette/SpartanIntro`
 * A copy of information about HPC at the University of Melbourne is available at `https://dashboard.hpc.unimelb.edu.au`. See also `man spartan` on the cluster and the `/usr/local/common/` directories for more help and code exammples.
-* Help is available at: `hpc-support@unimelb.edu.au`. Other courses also conducted by Research Platforms.
+* Help is available at: `hpc-support@unimelb.edu.au`. Other courses also conducted by Research Computing Services.
 -- *Slide End* --
 
 -- *Slide* --
 ### Part I: Helpdesk
 * Read the Message of the Day when you login!
 * If a user has problems with submitting a job, or needs a new application or extension to an existing application installed, or if their submissions are generated unexpected errors etc., an email can be sent to the helpdesk: `hpc­-support@unimelb.edu.au`. 
-* Do not email individual sysadmins; we need consolidated records. Please be informative about the error or issue. Separate tickst for separate issues. Don't try to use sudo!
+* Don't email individual sysadmins; we need consolidated records. Please be informative about the error or issue. Separate tickets for separate issues. Don't try to use sudo!
 -- *Slide End* --
 
 -- *Slide* --
 ### Part I: Using HPC
 * People need to use HPC when their datasets are "too large" or processing is "too complex" for their PC.
-* HPC is the *best* tool to processing large and complex datasets 
+* HPC is the *best* tool to processing large and complex datasets. 
 * However due to latency and bandwdith issues, it is not always the best for visualisation.
 -- *Slide End* --
 
@@ -38,7 +38,7 @@
 -- *Slide* --
 ### Part 1: Clusters and Research Computing
 * Clustered computing is when two or more computers serve a single resource. This improves performance and provides redundancy in case of failure system. Typically commodity systems with a high-speed local network.
-* Research computing is the software applications used by the scientific community to aid research. Does not necessarily equate with high performance computing, or the use of clusters.­ It is whatever researchers use and do. Note issues of reproducibility and environments.
+* Research computing is the software applications used by the research community. Does not necessarily equate with high performance computing, or the use of clusters.­ It is whatever researchers use and do. Note issues of reproducibility and environments.
 -- *Slide End* --
 
 -- *Slide* --
@@ -61,7 +61,7 @@
 
 -- *Slide* --
 ### Part 1: Generic HPC Cluster Design
-<img src="https://raw.githubusercontent.com/UoM-ResPlat-DevOps/SpartanIntro/master/Images/genericcluster.png" />
+<img src="https://raw.githubusercontent.com/levlafayette/SpartanIntro/master/Images/genericcluster.png" />
 Image originally from the VPAC
 -- *Slide End* --
 
@@ -99,7 +99,7 @@ Image originally from the VPAC
 -- *Slide* --
 ### Part I: Accounts and Projects
 * Spartan uses its an authentication that is tied to the university Security Assertion Markup Language (SAML). The login URL is `https://dashboard.hpc.unimelb.edu.au/karaage`
-* Users on Spartan must belong to a project. Projects must be led by a University of Melbourne researcher Participants in a project can be researchers or research support staff from anywhere.
+* Users on Spartan must belong to a project. Projects must be led by a University of Melbourne researcher. Participants in a project can be researchers or research support staff from anywhere.
 * Projects have their own project directory for files (500GB default, can be increased to 1TB or 10TB with approval).
 -- *Slide End* --
 
@@ -254,7 +254,7 @@ For example; `rsync -avz --update lev@spartan.hpc.unimelb.edu.au:files/workfiles
 | Command           | Explanation                                                          |
 |:------------------|:--------------------------------------------------------------------:|
 | `rsync source destination`| General rsync command  |
-| `rsync -avze ssh username@remotemachine:/path/to/source .` | With ssh encryption |
+| `ssh username@remotemachine:/path/to/source .` | With ssh encryption |
 -- *Slide End* --
 
 -- *Slide* --
@@ -265,7 +265,6 @@ For example; `rsync -avz --update lev@spartan.hpc.unimelb.edu.au:files/workfiles
 -- *Slide End* --
 
 -- *Slide* --
-
 ### Part 2: Synchronising Files and Directories IV
 * Rsync can be used in a synchronise mode with the --delete flag.  Consider this with the `-n`, or `--dry-run` options first!
 
@@ -454,7 +453,7 @@ invoked and the resource requests altered e.g.,
 -- *Slide* --
 ### Part 3 : Job Script Generator
 <img src="https://raw.githubusercontent.com/UoM-ResPlat-DevOps/SpartanIntro/master/Images/cat-asleep-on-keyboard.jpg" width="100%" height="100%" title="Lazy cat" />
-` https://dashboard.hpc.unimelb.edu.au/guides/script_generator/ `
+`https://dashboard.hpc.unimelb.edu.au/forms/script_generator/`
 -- *Slide End* --
 
 -- *Slide* --
@@ -495,7 +494,7 @@ dataset10.csv
 
 -- *Slide* --
 ### Part 4 : Multiple Job Steps II
-```bash
+```
 #!/bin/bash
 #SBATCH --­partition physical
 #SBATCH ­­--nodes=2
@@ -523,7 +522,7 @@ srun -N 1 -n 1 -t 06:00:00 ./myserialapp```
 -- *Slide* --
 ### Part 4: Staging
 * Local disk is typically faster than shared disks. If you find that your read-writes are slow and you are making use of a lot of I/O you may need to stage your data.
-* Spartan has `/data` for `/home` and `/projects` (large, slower), `/scratch` for temporary storage data (faster), and as local disk, `/var/local/tmp` (fastest, not shared). 
+* Spartan has `/data` for `/home` (slower) and `/projects` (faster), `/scratch` for temporary storage data (faster), and as local disk, `/var/local/tmp` (fastest, not shared). 
 -- *Slide End* --
 
 -- *Slide* --
