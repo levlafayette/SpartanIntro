@@ -397,6 +397,13 @@ From the IBM 'Red Book' on Job Submission.
 * Basic resource usage `sacct -j [jobid] --format=JobID,JobName,MaxRSS,Elapsed` (or `-u [username]`
 </script></section>
 <section data-markdown><script type="text/template">
+### Part 2: Job Monitoring System
+* Spartan has introduced a job monitoring system.
+* Basic command is: `my-job-stats -j [jobID] -[ac]`
+* Options for Instantaneous mode `-c` or overall mode `-a`
+* Save information by adding snipped at the end of job submission script.
+</script></section>
+<section data-markdown><script type="text/template">
 ### Part 3: Single Core Job
 ```bash
 #!/bin/bash

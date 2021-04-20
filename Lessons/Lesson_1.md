@@ -412,6 +412,14 @@ From the IBM 'Red Book' on Job Submission.
 -- *Slide End* --
 
 -- *Slide* --
+### Part 2: Job Monitoring System
+* Spartan has introduced a job monitoring system.
+* Basic command is: `my-job-stats -j [jobID] -[ac]`
+* Options for Instantaneous mode `-c` or overall mode `-a`
+* Save information by adding snipped at the end of job submission script.
+-- *Slide End* --
+
+-- *Slide* --
 ### Part 3: Single Core Job
 ```bash
 #!/bin/bash
