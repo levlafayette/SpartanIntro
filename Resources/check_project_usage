@@ -1,0 +1,25 @@
+#!/bin/bash
+
+MYGROUP=$@
+
+if [ "$MYGROUP" == "" ]; then MYGROUP=$(groups); fi
+
+for group in $MYGROUP
+do
+  if [[ $group == "gaussian" ]] || [[ $group == "rmit" ]] || [[ $group == "deakin" ]] || [[ $group == "vu" ]] || [[ $group == "rmit" ]]; then continue; fi
+  QUOTASET=1;
+  PROJDIR="/data/cephfs/${group}"
+  CURQUOTABYTES=$(getfattr -n ceph.quota.max_bytes ${PROJDIR} --only-values --absolute-names 2>/dev/null)
+  if [ $? -eq 1 ]; then QUOTASET=0; fi
+  CURQUOTA=$((CURQUOTABYTES/(1000*1000*1000)))
+
+  CURUSAGEBYTES=$(ls -ldH ${PROJDIR} | awk '{print $5}')
+  CURUSAGE=$((CURUSAGEBYTES/(1000*1000*1000)))
+
+  if [ $QUOTASET -eq 1 ]
+  then
+    echo $group has used ${CURUSAGE}GB out of ${CURQUOTA}GB in ${PROJDIR}
+  else
+    echo $group has used ${CURUSAGE}GB in ${PROJDIR}. Currently no quota is set.
+  fi
+done

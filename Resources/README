@@ -1,0 +1,8 @@
+The file `gattaca.txt` is used for diff examples in the Introductory course and for regular expressions in the Intermediate course.
+
+The file `default.slurm` uses all the default values for slurm on this system; physical partition, one node, one task, one cpu-per-task, no mail, jobid as job name, ten minute walltime, etc. It has no specific Slurm directives other than the default!
+
+The file `specific.slurm` runs on a specific node. The list may be specified as a comma-separated list of hosts, a range of hosts (host[1-5,7,...] for example), or a filename. 
+
+The file `filenames.md` gives some examples about filenaming conventions in UNIX-like systems.
+
