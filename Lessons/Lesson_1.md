@@ -42,16 +42,6 @@
 -- *Slide End* --
 
 -- *Slide* --
-### Part 1: Parallel Computing
-* With a cluster architecture, applications can be more easily parallelised across them. *Data parallel*, running same task in parallel; the horse and cart example, Monte Carlo experiments. *Task parallel*, running independent tasks in parallel with communication; driving a car, molecular modelling.
-* Further examples of serial versus parallel; weather forecasting, aerodynamic design, fluid mechanics, radiation modelling, molecullar dynamics, CGI rendering for popular movies, etc. Reality is a parallel system!
--- *Slide End* --
-
--- *Slide* --
-<img src="https://raw.githubusercontent.com/UoM-ResPlat-DevOps/SpartanIntro/master/Images/smartparallel.jpg" height="200%" width="200%" />
--- *Slide End* --
-
--- *Slide* --
 ### Part 1: HPC Cluster and Parallel Processing Components
 * A chassis or rack, containing multiple computer system units, interconnect, and providing power.
 * Computer system units or nodes, containing memory, local disk, and sockets.
@@ -63,6 +53,16 @@
 ### Part 1: Generic HPC Cluster Design
 <img src="https://raw.githubusercontent.com/levlafayette/SpartanIntro/master/Images/genericcluster.png" />
 Image originally from the VPAC
+-- *Slide End* --
+
+-- *Slide* --
+### Part 1: Parallel Computing
+* With a cluster architecture, applications can be more easily parallelised across them. *Data parallel*, running same task in parallel; the horse and cart example, Monte Carlo experiments. *Task parallel*, running independent tasks in parallel with communication; driving a car, molecular modelling.
+* Further examples of serial versus parallel; weather forecasting, aerodynamic design, fluid mechanics, radiation modelling, molecullar dynamics, CGI rendering for popular movies, etc. Reality is a parallel system!
+-- *Slide End* --
+
+-- *Slide* --
+<img src="https://raw.githubusercontent.com/UoM-ResPlat-DevOps/SpartanIntro/master/Images/smartparallel.jpg" height="200%" width="200%" />
 -- *Slide End* --
 
 -- *Slide* --
