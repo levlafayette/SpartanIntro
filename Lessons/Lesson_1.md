@@ -57,7 +57,7 @@ Image originally from the VPAC
 
 -- *Slide* --
 ### Part 1: Parallel Computing
-* With a cluster architecture, applications can be more easily parallelised across them. *Data parallel*, running same task in parallel; the horse and cart example, Monte Carlo experiments. *Task parallel*, running independent tasks in parallel with communication; driving a car, molecular modelling.
+* With a manycore architecture, applications can be more easily parallelised across them. *Data parallel*, running same task in parallel; the horse and cart example, Monte Carlo experiments. *Task parallel*, running independent tasks in parallel with communication; driving a car, molecular modelling.
 * Further examples of serial versus parallel; weather forecasting, aerodynamic design, fluid mechanics, radiation modelling, molecullar dynamics, CGI rendering for popular movies, etc. Reality is a parallel system!
 -- *Slide End* --
 
@@ -83,10 +83,9 @@ Image originally from the VPAC
 -- *Slide End* --
 
 -- *Slide* --
-### Part 1: Archiecture
+### Part 1: Current Archiecture
 <img src="https://raw.githubusercontent.com/UoM-ResPlat-DevOps/SpartanIntro/master/Images/spartan_architecture.png" />
 -- *Slide End* --
-
 
 -- *Slide* --
 ### Part 1: Spartan Hardware
