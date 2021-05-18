@@ -103,7 +103,7 @@ Image originally from the VPAC
 -- *Slide End* --
 
 -- *Slide* --
-### Part I: Logging In
+### Part 2: Logging In
 * To log on to a HPC system, you will need a user account and password and a Secure Shell (ssh) client. Linux distributions almost always include SSH as part of the default installation as does 
 Mac OS 10.x. For MS-­Windows users, the free PuTTY client is recommended (http://putty.org). 
 * To transfer files use scp, WinSCP, Filezilla (`https://filezilla-project.org/`), or rsync.
@@ -111,14 +111,14 @@ Mac OS 10.x. For MS-­Windows users, the free PuTTY client is recommended (http:
 -- *Slide End* --
 
 -- *Slide* --
-### Part I: SSH Keys, Config, Data Transfers
+### Part 2: SSH Keys, Config, Data Transfers
 * Consider using an `.ssh/config` file and using passwordless SSH by creating a keypair and adding to your `.ssh/authorized_keys` file on Spartan.
 * SSH Keys will make your life easier. Follow the instructions here: `https://dashboard.hpc.unimelb.edu.au/faq/`
 * Both useful for data transfers. c.f., `https://dashboard.hpc.unimelb.edu.au/managing_data/` 
 -- *Slide End* --
 
 -- *Slide* --
-### Part I: Latency, Bandwidth, Data Location
+### Part 2: Latency, Bandwidth, Data Location
 * Latency is the speed of data transfer, bandwidth is the "width" of the "band" of data transfer.
 * Using a road analogy, "latency" is the smoothness of the surface, "bandwith" is the number of lanes.
 * Distance is a *very* important factor. Data for processing should be kept as close as possible to the processor.
