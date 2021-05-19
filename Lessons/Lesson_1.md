@@ -96,10 +96,18 @@ Image originally from the VPAC
 -- *Slide End* --
 
 -- *Slide* --
-### Part I: Accounts and Projects
+### Part 1: Accounts and Projects
 * Spartan uses its an authentication that is tied to the university Security Assertion Markup Language (SAML). The login URL is `https://dashboard.hpc.unimelb.edu.au/karaage`
 * Users on Spartan must belong to a project. Projects must be led by a University of Melbourne researcher. Participants in a project can be researchers or research support staff from anywhere.
 * Projects have their own project directory for files (500GB default, can be increased to 1TB or 10TB with approval).
+-- *Slide End* --
+
+-- *Slide* --
+### Part 2: This is a GNU/Linux CLI World
+* The command­line interface provides a great deal more power and is very resource efficient. 
+* GNU/Linux scales and does so with stability and efficiency.
+* Critical software such as the Message Parsing Interface (MPI) and nearly all scientific programs are designed to work with GNU/Linux. 
+* The operating system and many applications are provided as "free and open source" which are better placed to improve, optimize and maintain.
 -- *Slide End* --
 
 -- *Slide* --
@@ -118,6 +126,13 @@ Mac OS 10.x. For MS-­Windows users, the free PuTTY client is recommended (http:
 -- *Slide End* --
 
 -- *Slide* --
+### Part 2: File System Hierarchy
+* When a user logs in on a Linux or other UNIX-like system on the command line, they start in their home directory (`/home/<<username>>`). Project directory in `/data/projects/<<projectID>>`.
+* See `https://swcarpentry.github.io/shell-novice/fig/standard-filesystem-hierarchy.svg`
+* "Everything in the UNIX system is a file" (Kernighan & Pike, 1984, 41). 
+-- *Slide End* --
+
+-- *Slide* --
 ### Part 2: Latency, Bandwidth, Data Location
 * Latency is the speed of data transfer, bandwidth is the "width" of the "band" of data transfer.
 * Using a road analogy, "latency" is the smoothness of the surface, "bandwith" is the number of lanes.
@@ -125,25 +140,6 @@ Mac OS 10.x. For MS-­Windows users, the free PuTTY client is recommended (http:
 * As Grace Hopper used to say: "Mind your nanoseconds!" https://www.youtube.com/watch?v=9eyFDBPk4Yw
 -- *Slide End* --
 
--- *Slide* --
-### Part 2: This is a GNU/Linux CLI World 
-<img src="https://raw.githubusercontent.com/UoM-ResPlat-DevOps/SpartanIntro/master/Images/gnulinux.png" align="center" height="25%" width="25%" vspace="5" hspace="5" />
--- *Slide End* --
-
--- *Slide* --
-### Part 2: This is a GNU/Linux CLI World
-* The command­line interface provides a great deal more power and is very resource efficient. 
-* GNU/Linux scales and does so with stability and efficiency.
-* Critical software such as the Message Parsing Interface (MPI) and nearly all scientific programs are designed to work with GNU/Linux. 
-* The operating system and many applications are provided as "free and open source" which are better placed to improve, optimize and maintain.
--- *Slide End* --
-
--- *Slide* --
-### Part 2: File System Hierarchy
-* When a user logs in on a Linux or other UNIX-like system on the command line, they start in their home directory (`/home/<<username>>`). Project directory in `/data/projects/<<projectID>>`.
-* See `https://swcarpentry.github.io/shell-novice/fig/standard-filesystem-hierarchy.svg`
-* "Everything in the UNIX system is a file" (Kernighan & Pike, 1984, 41). 
--- *Slide End* --
 
 -- *Slide* --
 ### Part 2: Exploring The Environment
