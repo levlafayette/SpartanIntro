@@ -130,12 +130,13 @@ Mac OS 10.x. For MS-­Windows users, the free PuTTY client is recommended (http:
 * When a user logs in on a Linux or other UNIX-like system on the command line, they start in their home directory (`/home/<<username>>`). Project directory in `/data/projects/<<projectID>>`.
 * See `https://swcarpentry.github.io/shell-novice/fig/standard-filesystem-hierarchy.svg`
 * "Everything in the UNIX system is a file" (Kernighan & Pike, 1984, 41). 
+* Develop good file management practises.
 -- *Slide End* --
 
 -- *Slide* --
 ### Part 2: Latency, Bandwidth, Data Location
 * Latency is the speed of data transfer, bandwidth is the "width" of the "band" of data transfer.
-* Using a road analogy, "latency" is the smoothness of the surface, "bandwith" is the number of lanes.
+* Using a road analogy, "latency" is the smoothness of the surface, "bandwidth" is the number of lanes.
 * Distance is a *very* important factor. Data for processing should be kept as close as possible to the processor.
 * As Grace Hopper used to say: "Mind your nanoseconds!" https://www.youtube.com/watch?v=9eyFDBPk4Yw
 -- *Slide End* --
@@ -148,6 +149,16 @@ Mac OS 10.x. For MS-­Windows users, the free PuTTY client is recommended (http:
 |`whoami`   | "Who Am I?; prints the effective user id                                     |
 |`pwd`      | "Print working directory"							   |
 |`ls`       | "List" directory listing                                                     |	
+-- *Slide End* --
+
+-- *Slide* --
+### Part 2: Common Shortcuts
+| Command     | Explanation                                                                |
+|:------------|:--------------------------------------------------------------------------:|
+|`~`   | Home directory                                     				   |
+|`.`      | Current working directory							   |
+|`..`       |  One directory level closer to root                                          |	
+|`/`	| root directory, directory delimiter						   |
 -- *Slide End* --
 
 -- *Slide* --
@@ -196,7 +207,7 @@ To redirect output use the '>' symbol. To redirect input (for example, to feed d
 -- *Slide* --
 ### Part 2: Files and Text Editing
 * Linux filenames can be constructed of any characters except the forward slash, which is for directory navigation. However it is best to avoid punctuation marks, non-printing characters (e.g., spaces). It is *much* better to use snake_case or CamelCase instead of spaces, newlines etc (including in job names).
-* Linux is case-sensitive with its filenames (e.g., list.txt, LIST.txt lisT.txT are different).
+* Linux is case-sensitive with its filenames (e.g., list.txt, LIST.txt lisT.txT are different). The `touch` command creates an empty file, but with metadata.
 -- *Slide End* --
 
 -- *Slide* --
@@ -316,7 +327,7 @@ BRAF is a human gene that makes a protein (imaginatively) named B-Raf. This prot
 -- *Slide End* --
 
 -- *Slide* --
-### Part 3: Environment Modules  Commands
+### Part 3: Environment Module Commands
 * The are two implementations of environment modules. The classic modules system was available on the Edward HPC, and the newer Lmod is on Spartan. LMod is considered superior for hierarchies of modules.
 -- *Slide End* --
 
