@@ -17,7 +17,7 @@
 -- *Slide* --
 ### Part I: Helpdesk
 * Read the Message of the Day when you login!
-* If a user has problems with submitting a job, or needs a new application or extension to an existing application installed, or if their submissions are generated unexpected errors etc., an email can be sent to the helpdesk: `hpc­-support@unimelb.edu.au`. 
+* If a user has problems with submitting a job, or needs a new application or extension to an existing application installed, or if their submissions are generated unexpected errors etc., an email can be sent to the helpdesk: `hpc­-support@unimelb.edu.au` or through the support page: `https://dashboard.hpc.unimelb.edu.au/training_help/`. 
 * Don't email individual sysadmins; we need consolidated records. Please be informative about the error or issue. Separate tickets for separate issues. Don't try to use sudo!
 -- *Slide End* --
 
